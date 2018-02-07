@@ -10,6 +10,13 @@
     ::selection {
   background: #ffb7b7; /* WebKit/Blink Browsers */
     }
+    @import url('https://fonts.googleapis.com/css?family=Rammetto+One');
+
+    body{
+      background-image: url("images/space.jpg");
+      background-size:cover;
+    }
+
     p {
       max-width:800px;
       font-family: 'Raleway', sans-serif;
@@ -19,6 +26,12 @@
       left:200px;
       padding-left: 50px;
       padding-right: 50px;
+
+    }
+
+    img{
+      max-width: 100%;
+      float:left;
 
     }
 
@@ -40,14 +53,32 @@
     }
 
     div {
-      position:relative;
-      left:400px;
+      background-color: red;
+      height:100px;
+      width:100px;
+
+    }
+
+    /* div:hover {
+      animation: rounded 3s infinite alternate;
+    } */
+
+    div:hover {
+      height:400px;
+      transition: 3s;
+    }
+
+    @keyframes rounded {
+      0%  { border-radius: 0px; width:100px;}
+      100%{ border-radius: 80px; width: 400px;}
+
     }
     </style>
 
   </head>
   <body>
-
+    <!-- <img src="images/space.jpg" alt="space"> -->
+    <div></div>
     <p class="se redback">Six years was a long time to be in jail, but it’s an entire era online. </p>
     <p>Writing on the internet itself had not changed, but reading — or, at least, getting things read — had altered dramatically. I’d been told how essential social networks had become while I’d been gone, and so I knew one thing: If I wanted to lure people to see my writing, I had to use social media now.</p>
 

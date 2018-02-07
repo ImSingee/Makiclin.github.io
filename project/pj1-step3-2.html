@@ -2,99 +2,489 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Project1-part3-2</title>
-    <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+    <title>Project1-Marcus</title>
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P|Roboto+Mono:500,700" rel="stylesheet">
     <style>
+
     ::selection {
-  background: white; /* WebKit/Blink Browsers */
-    }
-    p{
-      font-family: 'VT323', monospace;
-      font-size: 14pt;
-      line-height: 2rem;
-      color:white;
-      position:relative;
-      left:10px;
-
+  background: white;
     }
 
-    p.cent{
-      position: relative;
-      left:400px;
-    }
+    body{
+      background-image: url("images/full.jpg");
+      background-size:cover;
+      padding-bottom: 50px;
 
-    p.sti{
-      position: sticky;
-      top: 200px;
-      color: #389108;
-    }
-
-    p.sti2{
-      position: sticky;
-      bottom: 40px;
-      left:400px;
-
-    }
-
-    p.SnapChat{
-      color:#FFFB07;
-    }
-
-    p.Viber{
-      color:#824B93;
-    }
-
-    p.WhatsApp{
-      color:#1EAE21;
-    }
-
-
-    p#se{
-      color: #389108;
 
     }
 
     em{
-      color:#389108;
+      border-bottom: 6px solid;
+      border-color: #8229A7;
       font-style: normal;
+
     }
 
-    body {background-color: black;
+    em.Instagram{
+      border-bottom: 0;
+      color:#D82E70;
+
     }
+
+
+    em.SnapChat{
+      border-bottom: 0;
+      color:#F2E232;
+
+    }
+
+    em.WhatsApp{
+      border-bottom: 0;
+      color:#49C459;
+
+    }
+
+
+
+    p{
+      padding-left: 20%;
+      padding-right: 20%;
+      font-family: 'Roboto Mono', monospace;
+      color: #efeae6;
+
+    }
+
+    p a{
+      padding-left: 1%;
+      color:#DFD9D4;
+      text-decoration: none;
+    }
+
+
+
+    h1{
+      padding-top: 10%;
+      padding-left: 20%;
+      padding-right: 20%;
+      font-size: 46px;
+      font-family: 'Roboto Mono', monospace;
+      font-weight: 700;
+      line-height: 4.2rem;
+      color:#efeae6;
+      letter-spacing: -1px;
+    }
+
+    p.secondsentence{
+      color:#efeae6;
+      padding-bottom: 400px;
+      font-family: 'Roboto Mono', monospace;
+      font-size: 16px;
+      line-height: 2.2rem;
+
+    }
+
+    p.one{
+      color:#efeae6;
+      font-family: 'Roboto Mono', monospace;
+      font-size: 16px;
+      line-height: 2.2rem;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+
+    }
+
+    p.nonono{
+      font-size: 40px;
+      font-family: 'Roboto Mono', monospace;
+      text-align: left;
+      line-height: 60px;
+    }
+
+    p.glitch {
+      margin-left: 20%
+      color: #fff;
+      font-size: 40px;
+      letter-spacing: 8px;
+      font-family: 'Roboto Mono', monospace;
+      font-weight: 700;
+      margin: 0;
+      line-height: 0;
+
+      animation: glitch1 2.5s infinite;
+    }
+
+    p.glitch:nth-child(2) {
+      color: #67f3da;
+      animation: glitch2 2.5s infinite;
+    }
+
+    p.glitch:nth-child(3) {
+      color: #f16f6f;
+      animation: glitch3 2.5s infinite;
+}
+
+    p.windows{
+      padding-left: 40px;
+      padding-right: 40px;
+      padding-top: 120px;
+      font-family: 'Press Start 2P', cursive;
+      line-height: 2rem;
+      letter-spacing: 0.2px;
+      font-size: 12px;
+
+    }
+
+    div.neonarrow{
+      background-image: url("images/arrorneon.gif");
+      background-size:cover;
+      position: absolute;
+      height:60px;
+      width:120px;
+      left:21%;
+      top:82%;
+    }
+
+    div.moon {
+      background-image: url("images/moon.png");
+      background-size:cover;
+      position: absolute;
+      height:80px;
+      width:80px;
+      left:80%;
+      top:80px;
+
+
+      animation: moon 5s infinite;
+
+
+    }
+
+    @keyframes moon {
+
+        0%{transform: scale(1.0);}
+        50% {transform: scale(1.2);}
+        100% {transform: scale(1.0);}
+
+      }
+
+    div.glitchcontainer {
+      width: 80vw;
+      margin-left: 54px;
+      margin-top: 30px;
+      margin-bottom: 50px;
+
+    }
+
+    div.glitchcontainer2 {
+      width: 80vw;
+      margin-left: 54px;
+      margin-top: 60px;
+      margin-bottom: 130px;
+
+    }
+@keyframes glitch1 {
+  0% {
+    transform: none;
+    opacity: 1;
+  }
+  7% {
+    transform: skew(-2deg, -3deg);
+    opacity: 0.75;
+  }
+  10% {
+    transform: none;
+    opacity: 1;
+  }
+  27% {
+    transform: none;
+    opacity: 1;
+  }
+  30% {
+    transform: skew(3deg, 4deg);
+    opacity: 0.75;
+  }
+  35% {
+    transform: none;
+    opacity: 1;
+  }
+  52% {
+    transform: none;
+    opacity: 1;
+  }
+  55% {
+    transform: skew(-2deg, 1.8deg);
+    opacity: 0.75;
+  }
+  50% {
+    transform: none;
+    opacity: 1;
+  }
+  72% {
+    transform: none;
+    opacity: 1;
+  }
+  75% {
+    transform: skew(4deg, 8deg);
+    opacity: 0.75;
+  }
+  80% {
+    transform: none;
+    opacity: 1;
+  }
+  100% {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+@keyframes glitch2 {
+  0% {
+    transform: none;
+    opacity: 0.25;
+  }
+  7% {
+    transform: translate(-3px, -4px);
+    opacity: 0.5;
+  }
+  10% {
+    transform: none;
+    opacity: 0.25;
+  }
+  27% {
+    transform: none;
+    opacity: 0.25;
+  }
+  30% {
+    transform: translate(-5px, -2px);
+    opacity: 0.5;
+  }
+  35% {
+    transform: none;
+    opacity: 0.25;
+  }
+  52% {
+    transform: none;
+    opacity: 0.25;
+  }
+  55% {
+    transform: translate(-5px, -1px);
+    opacity: 0.5;
+  }
+  50% {
+    transform: none;
+    opacity: 0.25;
+  }
+  72% {
+    transform: none;
+    opacity: 0.25;
+  }
+  75% {
+    transform: translate(-2px, -6px);
+    opacity: 0.5;
+  }
+  80% {
+    transform: none;
+    opacity: 0.25;
+  }
+  100% {
+    transform: none;
+    opacity: 0.25;
+  }
+}
+
+@keyframes glitch3 {
+  0% {
+    transform: none;
+    opacity: 0.25;
+  }
+  7% {
+    transform: translate(2px, 3px);
+    opacity: 0.5;
+  }
+  10% {
+    transform: none;
+    opacity: 0.25;
+  }
+  27% {
+    transform: none;
+    opacity: 0.25;
+  }
+  30% {
+    transform: translate(5px, 2px);
+    opacity: 0.5;
+  }
+  35% {
+    transform: none;
+    opacity: 0.25;
+  }
+  52% {
+    transform: none;
+    opacity: 0.25;
+  }
+  55% {
+    transform: translate(5px, 1px);
+    opacity: 0.5;
+  }
+  50% {
+    transform: none;
+    opacity: 0.25;
+  }
+  72% {
+    transform: none;
+    opacity: 0.25;
+  }
+  75% {
+    transform: translate(2px, 6px);
+    opacity: 0.5;
+  }
+  80% {
+    transform: none;
+    opacity: 0.25;
+  }
+  100% {
+    transform: none;
+    opacity: 0.25;
+  }
+}
+
+
+    div.no{
+      color:#efeae6;
+      margin-left: 19%;
+      margin-right: 20%;
+      padding-left: 1%;
+      font-size: 40px;
+      font-family: 'Roboto Mono', monospace;
+      line-height: 60px
+    }
+
+    div.no1:hover{
+      background-image: url("images/nodescription.jpg");
+      background-size:cover;
+    }
+
+    div.no2:hover{
+      background-image: url("images/noimage.jpg");
+      background-size:cover;
+    }
+
+    div.no3:hover{
+      background-image: url("images/nothing.jpg");
+      background-size:cover;
+    }
+
+    div.no4:hover{
+      background-image: url("images/threelikes.jpg");
+      background-size:cover;
+    }
+
+    div.no5:hover{
+      background-image: url("images/three.jpg");
+      background-size:cover;
+    }
+
+    div.no6:hover{
+      background-image: url("images/Instagram.jpg");
+      background-size:cover;
+    }
+
+    div.no7:hover{
+      background-image: url("images/snapchat.jpg");
+      background-size:cover;
+    }
+
+    div.no8:hover{
+      background-image: url("images/whatsapp.jpg");
+      background-size:cover;
+    }
+
+
+    div.windows{
+
+      background-image: url(images/windows.png);
+      background-size: 100%;
+      width: 60%;
+      margin-left: 20%;
+      margin-right: 20%;
+      background-repeat: no-repeat;
+      height: 38rem;
+
+
+
+      /* margin-left: 20%;
+      margin-right: 20%;
+      margin-top: 50px;
+      margin-bottom: 50px;
+      height:600px;
+      background-image: url("images/windows.png");
+      background-size:cover; */
+
+    }
+
+    span.blinkcursor {
+      font-size: 20px;
+      font-family: 'Press Start 2P', cursive;
+      color: #DFD9D4;
+      animation: blink 1s infinite;
+}
+
+    @keyframes blink {
+      0%{opacity: 0;}
+      100% {opacity: 1;}
+
+    }
+
+
     </style>
-
   </head>
+
   <body>
-    <a href="https://diyaccddyy.github.io/project/dynamic.html,%20.html" target="_blank"><p>previous</p></a>
-    <a href="https://momomeagle.github.io/project/neutral.html" target="_blank"><p>next</p></a>
-    <p>========================================================================================</p>
+      <p><a href="https://diyaccddyy.github.io/project/dynamic.html,%20.html" target="_blank"> ←previous </a> <a href="https://momomeagle.github.io/project/neutral.html" target="_blank">next→</a></p>
+      <div class=neonarrow></div>
+      <div class=moon></div>
+      <h1> Six years was a long time<br>to be in jail,<br>but it’s an entire era online.</h1>
 
-    <p> Six years was a long time to be in jail, but it’s an entire era online. <br>Writing on the internet itself had not changed, but reading — or, at least, getting things read — had altered dramatically.<br> I’d been told how essential social networks had become while I’d been gone, and so I knew one thing: <br>If I wanted to lure people to see my writing, I had to use social media now.</p>
+      <p class="secondsentence">Writing on the internet itself had not changed, but reading — or, at least, getting things read — had altered dramatically.</p>
 
-    <p>So I tried to post a link to one of my stories on Facebook. Turns out Facebook didn’t care much. It ended up looking like a boring classified ad. <br>&nbsp;&nbsp;No description.<br> &nbsp;&nbsp;No image.<br> &nbsp;&nbsp;No thing.<br> &nbsp;&nbsp;It got three likes.<br> Three!</p>
-    <p class="cent sti">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;That was it.</p>
-
-    <p>&nbsp;&nbsp;&nbsp;&nbsp;It became clear to me, right there, that things had changed. <br>I was not equipped to play on this new turf — all my investment and effort had burned up. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I was devastated.</p>
-
+      <p class=one>I’d been told how essential social networks had become while I’d been gone, and so I knew one thing:If I wanted to <em>lure</em> people to see my writing, I had to use social media now.
+So I tried to post a link to one of my stories on Facebook. Turns out Facebook didn’t care much. It ended up looking like a boring <em>classified ad.</em></p>
 
 
-    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Blogs were gold and bloggers were rock stars back in 2008 when I was arrested.At that point, <br>and despite the fact the state was blocking access to my blog from inside Iran, <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
-    <p id=se>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I had an audience of around(&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; )20,000 people every day. </p>
-    <p>Everybody I linked to would face a sudden and serious jump in traffic: I could empower or embarrass anyone I wanted.</p>
+      <div class="no no1">No description.</div>
+      <div class="no no2">No image.</div>
+      <div class="no no3">Nothing.</div>
+      <div class="no no4">It got three likes.</div>
+      <div class="no no5">Three!</div>
 
-    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;People used to carefully read my posts and leave lots of relevant comments, and even many of those who strongly disagreed with me still came to read. <br>Other blogs linked to mine to discuss what I was saying. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>I felt like a king.(&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;)</em></p>
 
-    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The iPhone was a little over a year old by then, but smartphones were still mostly used to make phone calls and send short messages, handle emails, <br>and surf the web. There were no real apps, &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;certainly not how we think of them today.<br> There was no Instagram,</p>
-    <p class=SnapChat>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;no &nbsp; SnapChat, </p>
-    <p class=Viber>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;no &nbsp;&nbsp;&nbsp;Viber, </p>
-    <p class=WhatsApp>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;no &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; WhatsApp.</p>
+      <div class="glitchcontainer">
+        <p class= glitch>THAT WAS IT.</p>
+        <p class= glitch>THAT WAS IT.</p>
+        <p class= glitch>THAT WAS IT.</p>
+      </div>
 
-    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Instead,<br> there was the web,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; and on the web, there were blogs: the best place <br> to find alternative thoughts, news and analysis. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
-    <p class=sti2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>They were my life.</em></p>
+      <p class=one>It became clear to me, right there, that things had <em>changed.</em> I was not equipped to play on this new turf — all my investment and effort had burned up.I was devastated. </p>
 
-    <p><br><br><br><br>========================================================================================</p>
-    <p><br><br><br></p>
+      <div class= "windows">
+      <p class= "windows"> Blogs were gold and bloggers were rock stars back in 2008 when I was arrested.<br>At that point, and despite the fact the state was blocking access to my blog from inside Iran, I had an audience of around <em>20,000</em> people every day. <br>Everybody I linked to would face a sudden and serious jump in traffic:
+                        I could <em>empower</em> or <em>embarrass</em> anyone I wanted.<br>
+                        People used to carefully read my posts and leave lots of relevant comments, and even many of those who strongly disagreed with me <em>still came</em> to read.Other blogs linked to mine to discuss what I was saying.<br><span class=blinkcursor>|</span> </p>
+
+      </div>
+
+      <p class=one>I felt like a king. The iPhone was a little over a year old by then, but smartphones were still mostly used to make phone calls and send short messages, handle emails, and surf the web. There were no <em>real</em> apps, certainly not how we think of them today.</p>
+
+      <div class="no no6">No <em class=Instagram>Instagram.</em></div>
+      <div class="no no7">No <em class=SnapChat>SnapChat.</em></div>
+      <div class="no no8">No <em class=WhatsApp>WhatsApp.</em></div>
+      <p class="one"> Instead, there was the web, and on the web, there were blogs: the best place to find alternative thoughts, news and analysis.</p>
+      <div class="glitchcontainer2">
+        <p class="glitch">THEY WERE MY LIFE.</p>
+        <p class="glitch">THEY WERE MY LIFE.</p>
+        <p class="glitch">THEY WERE MY LIFE.</p>
+      </div>
+
+      <p><a href="https://diyaccddyy.github.io/project/dynamic.html,%20.html" target="_blank"> ←previous </a> <a href="https://momomeagle.github.io/project/neutral.html" target="_blank">next→</a></p>
 
 
   </body>
-</html>
