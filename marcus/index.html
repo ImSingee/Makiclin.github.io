@@ -1,114 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <!-- This website (actually webpage) is designed and made by Marcus, it is just a beginning. -->
     <meta charset="utf-8">
     <title>MARCUS FEI</title>
     <link rel="stylesheet" href="https://use.typekit.net/lal5xdh.css">
-    <link rel="icon" href=images/favicon.png>
+    <link rel="icon" href="images/favicon.png">
 
-  <style>
+    <style>
+        html {
+            height: 100%;
+        }
 
-    body{
-      margin:0px;
-      background-image: url("images/BG2.jpg");
-      background-size: cover;
-      background-repeat: space;
-    }
+        body {
+            margin: 0;
+            background: url("images/BG2.jpg") no-repeat center center;
+            background-size: cover;
+        }
 
-    div.container{
-      width:100%;
-      max-width: 1000px;
-      margin: auto;
+        .container {
+            width: 100%;
+            max-width: 1000px;
+            margin: auto;
 
-    }
+        }
 
-    div.profile{
-      position: relative;
-      width:100%;
-      margin-left: auto;
-      margin-right: auto;
-      margin-top:16%;
-    }
+        .profile {
+            position: relative;
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 16%;
+        }
 
-    img.avatar{
-      position:relative;
-      border-radius: 80px;
-      height:80px;
-      width:80px;
-      display:block;
-      margin-left: auto;
-      margin-right: auto;
-    }
+        img.avatar {
+            position: relative;
+            border-radius: 80px;
+            height: 80px;
+            width: 80px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 2%;
+        }
 
-    p.name{
-      text-align: center;
-      color:white;
-      font-family: 	"proxima-nova" 700;
-      font-size: 22px;
+        p.name {
+            text-align: center;
+            color: white;
+            font-family: "proxima-nova", sans-serif;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 22px;
 
-    }
+        }
 
-    div.button{
-      display:block;
-      width:490px;
-      margin-left: auto;
-      margin-right: auto;
-      margin-top: 8%;
+        .button {
+            width: 490px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 8%;
 
-    }
+        }
 
-    button{
-      background-color: Transparent;
-      color: white;
-      width: 120px;
-      margin-left: 20px;
-      margin-right: 20px;
-      padding: 8px;
-      padding-left: 12px;
-      padding-right: 12px;
-      font-size: 16px;
-      border: 2px solid #fff;
-      border-radius: 50px;
-      display:block;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
+        .button button {
+            display: inline-block;
+            margin: 0 20px;
+            padding: 8px 12px;
+            background-color: Transparent;
+            color: white;
+            width: 120px;
+            border: 2px solid #fff;
+            border-radius: 50px;
+            text-align: center;
+            text-decoration: none;
+            font-family: "akagi-pro", sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+        }
 
-    }
+        a {
+            color: white;
+            text-decoration: none;
+        }
 
-    a{
-      color:white;
-      text-decoration: none;
-    }
+        a:hover {
+            color: #042552;
+            transition: 0.6s;
+        }
 
-    a:hover{
-      color: #042552;
-      transition:0.6s;
-    }
+        a:visited {
+            text-decoration: none;
+        }
 
-    a:visited { text-decoration: none; }
-    a:focus { color: #042552; text-decoration: none; }
+        a:focus {
+            color: #042552;
+            text-decoration: none;
+        }
 
-    button:hover{
-      color: #042552;
-      background-color: white;
-      transition:0.6s;
-    }
+        button:hover {
+            color: #042552;
+            background-color: white;
+            transition: 0.6s;
+            cursor: pointer;
+        }
 
-  </style>
+        p.copyright {
+            font-family: "akagi-pro", sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            text-align: center;
+            color: #042552;
+            position:fixed;
+            bottom: 0;
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            /*margin-top: 34%;*/
 
-  </head>
 
-  <body>
-    <div class="container">
-    <div class="profile"><img class=avatar src="avatar.jpg" alt="marcusfei"> <p class=name>Marcus Fei</p></div>
-    <div class="button"><a href=res/MarcusFei_resumeEn.pdf target="_blank"><button>RESUEM</button></a>
-                        <a href=res/MarcusFei_portfolioEn.pdf target="_blank"><button>PORTFOLIO</button></a>
-                        <a href="https://dribbble.com/MakicLin" target="_blank"><button>DRIBBBLE</button></a>
 
+        }
+
+
+    </style>
+
+</head>
+
+<body>
+<div class="container">
+    <div class="profile"><img class=avatar src="images/avatar.jpg" alt="marcusfei">
+        <p class=name>MARCUS FEI</p></div>
+    <div class="button">
+        <a href=/res/MarcusFei_resumeEn.pdf target="_blank">
+            <button>Resume</button>
+        </a>
+        <a href="https://drive.google.com/file/d/1ukYxABFFx5t1qDuc3xsO3A8ljptWybgp/view" target="_blank">
+            <button>Portfolio</button>
+        </a>
+        <a href="https://dribbble.com/MakicLin" target="_blank">
+            <button>Dribbble</button>
+        </a>
     </div>
 
 
-  </body>
+</div>
+<p class=copyright>&copy; Marcus Fei 2018 </p>
+
+</body>
 </html>
