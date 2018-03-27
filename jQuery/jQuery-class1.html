@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>title</title>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+  <script>
+  $(document).ready(function(){
+
+    $(".first-div").hover(
+      function () {
+        $(this).addClass('hover');
+        $(".last-div").addClass('hover2');
+   },
+      function () {
+        $(this).removeClass('hover');
+        $(".last-div").removeClass('hover2');
+   });
+
+
+    $("div").click(
+      function () {
+        $(".hover").removeClass('hover');
+        $(this).addClass('hover');
+      });
+
+    $("div:nth-child(7)").hover(
+    function () {
+    $(this).toggleClass('hover2');
+  }
+  );
+
+
+  });
+
+  </script>
+
+  <style>
+
+  div{
+    height: 200px;
+    width: 200px;
+    background-color: red;
+    margin:10px;
+    float:left;
+    transition: all 0.5s ease;
+    border-radius: 100px;
+    cursor: pointer;
+  }
+
+  .hover{
+    background-color: yellow;
+  }
+
+  .hover2{
+    background-color: green;
+    height:500px;
+    transition: all 2s ease;
+    border-radius: 0px;
+  }
+
+  </style>
+
+  </head>
+  <body>
+
+  <div class="first-div"></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div class="last-div"></div>
+
+
+  </body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>title</title>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+  <script>
+  $(document).ready(function(){
+    var s = $("body");
+    var pos = s.position();
+    $(window).scroll(function() {
+        var windowpos = $(window).scrollTop();
+        if (windowpos >= pos.top & windowpos <=600) {
+          $("body").addClass('zone1');
+          $("body").removeClass('zone2');
+        }
+
+   else if (windowpos >= pos.top & windowpos >=1200 & windowpos <=1799) {
+          $("body").addClass('zone2');
+          $("body").removeClass('zone1');
+   }
+
+  });
+  });
+
+  </script>
+
+  <style>
+
+  div{
+    width:200px;
+    height:1000px;
+    background-color: black;
+    margin:20px;
+
+  }
+
+  .zone1{
+    background-color: red;
+    transition: all 1s ease;
+  }
+
+  .zone2{
+    background-color: green;
+    transition: all 1s ease;
+
+  }
+
+  h1{
+    position: fixed;
+    color:orange;
+    transform: translate(-300px,0px);
+    transition: 1s all ease;
+    font-size: 0px;
+  }
+
+  .zone1 h1:nth-child(1) {
+    transform: translate(0px,0px);
+    transition: 1s all ease;
+    font-size: 70px;
+  }
+
+  .zone2 h1:nth-child(2) {
+    transform: translate(100px,0px);
+    transition: 1s all ease;
+    font-size: 70px;
+  }
+  </style>
+
+  </head>
+  <body>
+    <h1>Spring</h1>
+    <h1>Break!!!!!!!!!!!!!</h1>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+
+  </body>
+</html>
