@@ -1,0 +1,417 @@
+
+
+html, body {
+	margin:0;
+	padding:0;
+}
+
+/* :focus {outline:none;}
+::-moz-focus-inner {border:0;} */
+
+
+body{
+	font-family: 'Raleway', sans-serif;
+	background-color: #FFF8FC;
+}
+
+p{
+	font-family: 'Raleway', sans-serif;
+	color: #1F40DC;
+	font-weight: 700;
+}
+
+a:visited{
+	text-decoration: none;
+}
+
+a:active{
+	text-decoration: none;
+}
+
+a{
+	color:black;
+	text-decoration: none;
+}
+
+p.links{
+	color: white;
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 2.5rem;
+}
+
+p.mediapress{
+	text-align: center;
+	color: #1F40DC;
+	font-weight: 700;
+	font-size: 24px;
+	font-style: italic;
+	width:60vw;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+h1{
+	font-size: 60px;
+	color: #1F40DC;
+	font-weight: 900;
+}
+
+h2{
+	font-size: 24px;
+	color: #1F40DC;
+	font-weight: 700;
+}
+
+
+
+div.title{
+	padding-top: 14%;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+}
+
+.menu{
+
+	height: 80px;
+	width: 80vw;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 4vh;
+}
+
+.muzylogo{
+	height: 60px;
+	width: auto;
+	background-image: url(img/muzylogo.png);
+	background-position: left;
+  background-repeat: no-repeat;
+  background-size: 150px;
+
+}
+
+.textleft{
+	width:60vw;
+}
+
+.textright{
+	margin-left: 8vw;
+	width:41vw;
+	float: left;
+}
+
+div.iconone{
+	margin:0;
+	padding-left: 20vw;
+	margin-top: 20px;
+	width:90px;
+	height: 413px;
+	background-repeat: no-repeat;
+	background-image: url(img/conversation.png);
+	background-size: cover;
+	float: left;
+}
+
+div.icontwo{
+	margin:0;
+	padding-left: 20vw;
+	margin-top: 60px;
+	width:140px;
+	height: 353px;
+	background-repeat: no-repeat;
+	background-image: url(img/multidevices.png);
+	background-size: cover;
+	float: left;
+}
+
+.button {
+		font-family: 'Raleway', sans-serif;
+		background-color: #1F40DC;
+    border: none;
+    color: white;
+    padding: 15px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+		margin-top: 5vh;
+
+}
+
+button{
+	font-family : 'Raleway', sans-serif;
+	font-weight: 700;
+}
+
+
+div.sections{
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 100px;
+	padding-bottom: 100px;
+	height: 60vh;
+	width: 80vw;
+}
+
+div.mediapresssection{
+
+	margin-left: auto;
+	margin-right: auto;
+	height: 40vh;
+	width: 80vw;
+	margin-top: 20vh;
+	margin-bottom: 10vh;
+}
+
+div.mediaicon{
+	height: 42px;
+	width:230px;
+	background-image: url(img/the_verge_logo.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 8vh;
+}
+
+div.footer{
+	margin: 0;
+	padding-left: 10vw;
+	padding-right: 10vw;
+	padding-top: 10vh;
+	padding-bottom: 10vh;
+	height: 30vh;
+	width:80vw;
+	background-color:  #1F40DC;
+
+}
+
+.changebackground{
+	width: 100vw;
+	height: 76vh;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-image: url(img/bg1.jpg);
+	background-size: cover;
+}
+
+img.hero{
+	width: 498px;
+	height: 568px;
+}
+
+.linkcolumn{
+	position: relative;
+	top:-9px;
+	margin:0;
+	width:80px;
+	height:200px;
+	float: left;
+	padding-left:10vw;
+
+}
+
+.copycolumn{
+	position: relative;
+	top:-9px;
+	margin:0;
+	width:180px;
+	height:200px;
+	float: left;
+	padding-left:10vw;
+
+}
+
+
+#container {
+  position: absolute;
+  left: 50vw;
+	top: -6px;
+  height: 100vh;
+  width: 40vw;
+  //border: solid 1px red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide {
+  display: block;
+  position: absolute;
+
+}
+
+.one{
+	height: 660px !important;
+  width: 660px !important;
+}
+
+.two{
+	height: 140px !important;
+  width: 140px !important;
+}
+
+.muzyfooterlogo{
+	height:50px;
+	width:143px;
+	background-image: url(img/muzyfooter.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	float: left;
+}
+
+.hold-questions{
+	position: fixed;
+	margin-left: 20vw;
+	margin-right: 20vw;
+	top:100px;
+	height:500px;
+	width:60vw;
+	background-color: white;
+	-webkit-box-shadow: 0px 7px 20px 0px rgba(255,219,240,0.53);
+	-moz-box-shadow: 0px 7px 20px 0px rgba(255,219,240,0.53);
+	box-shadow: 0px 7px 20px 0px rgba(255,219,240,0.53);
+	opacity: 0;
+
+}
+
+.hold-questionsshow{
+	opacity: 1;
+}
+
+.question {
+  position:absolute;
+  opacity:0;
+  z-index:-1;
+	margin: 40px;
+}
+
+.showquestion {
+  opacity:1;
+  z-index:1;
+}
+
+.bluebar{
+	width:100%;
+	height:60px;
+	background-color: #1F40DC;
+}
+
+.answer{
+	background-color: #E9E9E9;
+	border: 8px solid #E9E9E9;
+	margin-top: 40px;
+	line-height: 56px;
+
+
+}
+
+.line-1{
+    position: relative;
+    top: 50%;
+    width: 600px;
+		height:4em;
+    border-right: 2px solid rgba(255,255,255,.75);
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);
+		font-size: 24px;
+		color: #1F40DC;
+		font-weight: 700;
+		padding-top: 20px;
+}
+
+.muzyprofilephoto{
+	margin: 10px;
+	position: relative;
+	width:40px;
+	height:40px;
+	top:20px;
+	left:20px;
+	background-image: url(img/muzyprofilephoto.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+
+
+}
+
+.profilecard{
+	width:500px;
+	height:800px;
+	background-image: url(img/cardbackgorund.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.muzycard{
+	margin-left: 12px;
+	margin-top: 14px;
+	width:140px;
+	float: left;
+
+}
+
+.cardbrandtext{
+	position: relative;
+	top: 30px;
+	color:black;
+	margin-left: 370px;
+}
+
+.brand{
+	width:100%;
+	height:80px;
+	background-color: #053AF8;
+
+}
+
+#sketch-holder {
+    background-color: white;
+    position: relative;
+    z-index: -1;
+
+}
+
+div.name{
+	margin-left: 40%;
+}
+
+p.name{
+	color: white;
+	font-size: 58px;
+	font-weight: 900;
+}
+
+p.ageandlocation{
+	color:white;
+}
+
+.answerdata{
+	color: white;
+	font-size: 24px;
+}
+
+div.make-profile{
+	padding-left: 20px;
+	margin-top: 60px;
+}
+
+/* Animation */
+.anim-typewriter{
+  animation: typewriter 2.5s steps(64) .5s 1 normal both;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 800px;}
+}
+@keyframes opacity{
+	from{opacity: 0;}
+	to{opacity: 1;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+}

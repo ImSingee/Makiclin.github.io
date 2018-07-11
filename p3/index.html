@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MUZY-Best music robot</title>
+	<link rel="stylesheet" type="text/css" href="main.css" />
+	<!-- <link rel="shortcut icon" href="img/favicon.png"/> -->
+	<script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<link href="https://fonts.googleapis.com/css?family=Raleway:500,700,900" rel="stylesheet">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/utils/Draggable.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
+	<script src="init.js"></script>
+	<script src="quiz.js"></script>
+	<script language="javascript" type="text/javascript" src="libraries/p5.js"></script>
+  <script language="javascript" type="text/javascript" src="libraries/p5.sound.js"></script>
+  <script language="javascript" type="text/javascript" src="libraries/p5.dom.js"></script>
+  <script src="js/cam.js"></script>
+</head>
+
+<body>
+	<!-- <div id="container">
+		<img class="hero" src="img/hero_flatten.png" />
+		<img class="slide one" src="img/balls.gif" />
+		<img class="slide two" src="img/front.png" />
+	</div> -->
+
+	<div class="menu">
+		<div class="muzylogo"></div>
+	</div>
+
+	<div class="sections">
+
+		<div class="textleft">
+			<h1>The best music recommendation AI robot<br> ever.</h1>
+			<button class="button">Try it free</button>
+		</div>
+
+
+
+
+	</div>
+
+	<div class="sections">
+		<div class="iconone"></div>
+		<div class="textright">
+
+			<h1>How MUZY works?</h1>
+			<h2>Just have a happy conversation with MUZY, and she will know the music you like and the music you will like. </h2>
+			<p>*We will not collect the conversation between you and MUZY.</p>
+			<button class="button">Try it free</button>
+		</div>
+
+	</div>
+
+	<div class="changebackground">
+		<div class="sections ">
+			<div class="textleft">
+				<h1>MUZY is so smart.</h1>
+				<h2>We spend more than five years and research millions of people to make MUZY smart enough to know your music tast. Muzy will not only give the music you like, it will also recommend music you will like in the futhre.</h2>
+				<button class="button">Try it free</button>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="sections">
+		<div class="icontwo"></div>
+		<div class="textright">
+
+			<h1>Call up MUZY anytime.</h1>
+			<h2>Just have a happy conversation with MUZY, and she will know the music you like and the music you will like. </h2>
+			<p>*We will not collect the conversation between you and MUZY.</p>
+			<button class="button">Try it free</button>
+		</div>
+
+	</div>
+
+	<div class="mediapresssection">
+
+			<p class="mediapress"> "MUZY knows me much more than ANY OTHER music app." </p>
+			<div class="mediaicon"></div>
+
+	</div>
+
+
+	<div class="footer">
+		<div class="muzyfooterlogo"></div>
+		<div class="linkcolumn"><p class="links">About<br>Jobs<br>For the record</p></div>
+		<div class="linkcolumn"><p class="links">For Artists<br>Developers<br>Brands</p></div>
+		<div class="linkcolumn"><p class="links">Help<br>Gift<br>APIs</p></div>
+		<div class="copycolumn"><p class="links">© 2018 MUZY</p></div>
+	</div>
+
+	<!-- <div class="conversationwindow"> -->
+
+		<div class="hold-questions">
+			<div class="bluebar">
+			</div>
+			<div class="muzyprofilephoto">
+			</div>
+		  <div class="question q1 showquestion">
+		    <p class="line-1 anim-typewriter">If you are going to a road trip, what playlist you would choose?</p>
+		    <a href="#" class="a1 answer">-I’m the DJ throughout the trip.</a><br>
+		    <a href="#" class="a2 answer">I’m hitting shuffle on my friend's road trip playlist and just letting it flow.</a>
+		  </div>
+		  <div class="question q2">
+		    <p class="line-1 anim-typewriter2"> What about spring cleaning? How do you choose the perfect soundtrack to get the job done?</p>
+		    <a href="#" class="a1 answer">Pop</a>
+		    <a href="#" class="a2 answer">Classical</a>
+		    <a href="#" class="a3 answer">Country</a>
+		    <a href="#" class="a4 answer">Rock</a>
+				<a href="#" class="a5 answer">Hip-hop</a>
+		  </div>
+		  <div class="question q3">
+		    <p class="line-1 anim-typewriter"> So, what do you feel when you picking songs for a new playlist?</p>
+		    <a href="#" class="a1 answer">I seeking for new songs.</a>
+		    <a href="#" class="a2 answer">I always have the answers.</a>
+		  </div>
+		  <div class="question q4">
+		    <p class="line-1 anim-typewriter"> Speaker or Headphone?</p>
+		    <a href="#" class="a1 answer">Headphone</a>
+		    <a href="#" class="a2 answer">Speaker</a>
+		  </div>
+
+			<div class="question q5">
+		    <p class="line-1 anim-typewriter"> Two singer show, same day – which do you choose?</p>
+		    <a href="#" class="a1 answer">Popular singer concert</a>
+		    <a href="#" class="a2 answer">Alternative Songwriter Live House</a>
+		  </div>
+
+			<div class="question q6">
+		    <p class="line-1 anim-typewriter"> Last question, select a super power you want to get?</p>
+		    <a href="#" class="a1 answer">Headphone</a>
+		    <a href="#" class="a2 answer">Speaker</a>
+		  </div>
+
+		</div>
+
+		<div class="profilecard">
+
+			<div class="brand">
+				<img class="muzycard" src="img/muzycard.png" >
+				<p class="cardbrandtext">Music Profile</p>
+			</div>
+
+			<div id="sketch-holder">
+			      <!-- Our sketch will go here! -->
+			</div>
+
+			<div class="name">
+				<p class="name">JOE</p>
+				<p class="ageandlocation">San Francisco, CA <br> 24 years old.</p>
+
+			</div>
+
+
+
+			<div class="make-profile">
+
+			<p class="data1 answerdata">a</p>
+			<p class="data2 answerdata">a</p>
+			<p class="data3 answerdata">a</p>
+			<p class="data4 answerdata">a</p>
+			<p class="data5 answerdata">a</p>
+			<p class="data6 answerdata">a</p>
+			</div>
+		</div>
+
+
+</body>
+
+</html>
